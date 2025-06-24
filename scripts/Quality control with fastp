@@ -1,0 +1,32 @@
+#Read Quality Control with fastp
+This PBS script runs fastp to perform quality control on paired-end FASTQ files. It:
+
+Loads the fastp module
+
+Iterates over paired-end reads in the /xaa/ directory
+
+Trims and filters reads using 14 threads
+
+Outputs .qc.fastq.gz files for each read pair
+
+Logs are saved to the /logs/fastp directory. Designed for HPC environments.
+#
+#!/usr/bin/bash
+#PBS -l nodes=1:ppn=14
+#PBS -l walltime=72:00:00
+#PBS -q long
+#PBS -o /nlustre/users/muremb/project/logs/fastp
+#PBS -e /nlustre/users/muremb/project/logs/fastp
+#PBS -k oe
+#PBS -m ae
+#PBS -M u25698372@tuks.co.za
+
+cd /nlustre/users/muremb/project/
+module load fastp
+
+for x1 in /nlustre/users/muremb/project/xaa/*_1.fastq.gz
+do 
+x2=${x1/_1/_2}
+fastp --thread 14 --in1 $x1 --in2 $x2 --out1 ${x1%%.fastq.gz}.qc.fastq.gz 
+--out2 ${x2%%.fastq.gz}.qc.fastq.gz
+done  
