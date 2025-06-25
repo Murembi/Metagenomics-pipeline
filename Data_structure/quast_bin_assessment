@@ -1,0 +1,13 @@
+# Directory Structure
+mapping_results/
+├── JW001/
+│   ├── JW001_metabat_bins/
+│   │   ├── bin.1.fa
+│   │   ├── bin.2.fa
+│   │   └── ...
+├── JW002/
+│   ├── JW002_metabat_bins/
+│   │   ├── bin.1.fa
+│   │   ├── bin.2.fa
+│   │   └── ...
+└── ...
