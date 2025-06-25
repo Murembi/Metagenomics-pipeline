@@ -1,12 +1,12 @@
 #This PBS script runs FastQC to perform quality control on all FASTQ files in the xaa/ directory. It:
 
-Loads the FastQC module
+#Loads the FastQC module
 
-Processes all .fastq.gz files in xaa/
+#Processes all .fastq.gz files in xaa/
 
-Generates quality reports for each file
+#Generates quality reports for each file
 
-Designed for HPC use with 24 CPU cores.
+#Designed for HPC use with 24 CPU cores.
 #
 #!/bin/bash
 #PBS -l nodes=1:ppn=24
