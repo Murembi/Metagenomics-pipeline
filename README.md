@@ -1,4 +1,4 @@
-# Metagenomics-pipeline
+# Metagenomics_pipeline_bioinformatics
 This repository contains PBS job scripts developed for my honours research project focused on metagenomic data analysis. The scripts automate essential steps in processing shotgun sequencing data, including:
 Quality control of raw sequencing reads using fastp and FastQC
 Organizing sequencing data and assembly results for streamlined analysis
