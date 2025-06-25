@@ -1,9 +1,9 @@
 #The script runs QUAST on all bin files for each sample and saves the output inside a quast_results folder within each bin directory.
 
-Usage
-Make sure you have QUAST installed and accessible (quast.py command).
+#Usage
+#Make sure you have QUAST installed and accessible (quast.py command).
 
-Place the script in the parent directory containing the sample folders (mapping_results/). #
+#Place the script in the parent directory containing the sample folders (mapping_results/). #
 
 #!/bin/bash
 #PBS -l nodes=1:ppn=24
