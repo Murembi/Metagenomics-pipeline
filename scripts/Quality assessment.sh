@@ -1,15 +1,15 @@
 #This PBS batch script runs QUAST to evaluate the quality of metagenomic assemblies produced by MEGAHIT. For each sample directory in megahit_results_*, it:
 
-Extracts the sample name
+#Extracts the sample name
 
-Locates the final.contigs.fa file
+#Locates the final.contigs.fa file
 
-Runs quast.py if the contigs file exists
+#Runs quast.py if the contigs file exists
 
-Saves the output in a quast_<sample_name> folder
+#Saves the output in a quast_<sample_name> folder
 
-Designed for HPC environments using 24 threads.
-#
+#Designed for HPC environments using 24 threads.
+
 #!/bin/bash
 #PBS -l nodes=1:ppn=24
 #PBS -l walltime=30:00:00
