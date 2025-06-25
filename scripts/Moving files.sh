@@ -1,10 +1,10 @@
 #This script organizes paired-end quality-controlled FASTQ files and their corresponding MEGAHIT assembly outputs. For each sample (JW*_1_qc.fastq.gz), it:
 
-Extracts the sample name
+#Extracts the sample name
 
-Creates a new directory named after the sample
+#Creates a new directory named after the sample
 
-Moves the R1 and R2 FASTQ files and the final.contigs.fa file from the MEGAHIT results into the sample folder
+#Moves the R1 and R2 FASTQ files and the final.contigs.fa file from the MEGAHIT results into the sample folder
 #
 #!/bin/bash
 #PBS -l nodes=1:ppn=24
