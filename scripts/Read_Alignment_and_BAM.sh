@@ -1,17 +1,11 @@
 # Read Alignment and BAM Processing
-This PBS script aligns quality-controlled paired-end reads to assembled contigs using BWA, then processes the alignments with SAMtools for multiple samples (JW0*).
-
-Steps for Each Sample:
-Align reads to contigs using bwa mem
-
-Convert SAM to BAM with samtools view
-
-Sort the BAM file with samtools sort
-
-Index the sorted BAM file with samtools index
-
-Uses 24 threads per step. Output includes sorted and indexed BAM files for each sample.
-#
+#This PBS script aligns quality-controlled paired-end reads to assembled contigs using BWA, then processes the alignments with SAMtools for multiple samples (JW0*).
+#Steps for Each Sample:
+#Align reads to contigs using bwa mem
+#Convert SAM to BAM with samtools view
+#Sort the BAM file with samtools sort
+#Index the sorted BAM file with samtools index
+#Uses 24 threads per step. Output includes sorted and indexed BAM files for each sample.
 
 #!/bin/bash
 #PBS -l nodes=1:ppn=24
