@@ -1,4 +1,5 @@
-#A script used to bin the contigs into Metagenome assesmbled genomes using module module load das_tool-1.1
+#A script used to bin the contigs into Metagenome assesmbled genomes using module load das_tool-1.1
+#the samples that have fragmented or low quality bins will not have output directory
 #!/bin/bash
 #PBS -l nodes=1:ppn=24
 #PBS -l walltime=30:00:00
