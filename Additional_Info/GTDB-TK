@@ -1,0 +1,17 @@
+Overview
+GTDB-Tk (Genome Taxonomy Database Toolkit) is used to assign standardized, phylogenetically consistent taxonomy to bacterial and archaeal genomes, including MAGs from metagenomic datasets.
+
+This step is crucial for:
+Identifying the species/genus of each MAG
+Comparing microbial diversity across environments
+Linking taxonomy to ecological functions or traits
+
+⚙️ Input Requirements
+A directory of MAGs in FASTA format
+Each MAG should be a single .fasta or .fa file (with contigs)
+File names should be unique (e.g., MAG_001.fa, MAG_002.fa, etc.
+
+classify_wf: runs the full classification workflow
+--genome_dir: folder with input FASTA files
+--out_dir: destination for results
+--cpus: number of cores to use
