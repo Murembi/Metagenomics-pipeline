@@ -1,0 +1,27 @@
+🧪 DRAM Functional Annotation Notes
+🧬 Overview
+DRAM is a powerful tool for functional annotation of microbial genomes or MAGs. It integrates multiple databases (KEGG, UniRef, Pfam, etc.) to assign metabolic functions and identify important genes like transporters, enzymes, and secondary metabolite pathways.
+
+This step is key for:
+Exploring the metabolic potential of MAGs
+Identifying genes involved in drought tolerance, stress response, or plant-microbe interactions
+Linking taxonomy to function
+
+📁 Input Requirements
+A directory of MAGs in FASTA format (same as for GTDB-Tk)
+High-quality MAGs (ideally filtered by CheckM or similar tools)
+
+🚀 Running DRAM (Standard Annotation)
+bash
+Copy
+Edit
+dram.py annotate \
+  -i /path/to/MAGs/*.fa \
+  -o /path/to/FunctionAnnotation \
+  --threads 8 \
+  --min_contig_size 1000
+-i: Input MAG files (FASTA format)
+-o: Output directory
+--threads: Number of CPU threads
+--min_contig_size: Optional; filters out small contigs
+
