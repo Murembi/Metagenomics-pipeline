@@ -1,7 +1,7 @@
 library(treemapify)
 library(ggplot2)
 library(dplyr)
-
+Taxonomy_table2 <- read.csv("C:/Users/murem/Desktop/HonoursProject/Taxonomy_table2.csv")
 soft_palettes <- c(
   "#08306b", "#2171b5", "#6baed6", "#c6dbef",
   "#edf8fb", "#f7fcb9", "#fdae6b", "#e6550d",
@@ -11,9 +11,6 @@ phylum_summary <- Taxonomy_table2 %>%
   group_by(phylum) %>%
   summarise(count = n()) %>%
   mutate(percentage = round((count / sum(count)) * 100, 1))
-png("treemap_phylum.png",
-    width = 3000, height = 2000,  
-    res = 300)                    
 ggplot(phylum_summary, aes(
   area = count,
   fill = phylum,
@@ -23,7 +20,7 @@ ggplot(phylum_summary, aes(
   geom_treemap_text(
     grow = FALSE,
     reflow = TRUE,
-    size = 12 
+    size = 15
   ) +
   scale_fill_manual(
     values = soft_palettes,
@@ -34,4 +31,3 @@ ggplot(phylum_summary, aes(
     legend.title = element_blank(),
     legend.text = element_text(size = 14)
   )
-dev.off()
