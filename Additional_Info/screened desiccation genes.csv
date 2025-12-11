@@ -1,0 +1,24 @@
+Genes,Function,Pathway
+TPS,Catalyzes trehalose-6-phosphate formation,Trehalose synthesis
+TPP,Converts trehalose-6-phosphate to trehalose,Trehalose synthesis
+TreS,Converts maltose ↔ trehalose,Trehalose synthesis
+HSP70,Refolds misfolded proteins,Heat shock response
+HSP60,Chaperonin assisting proper protein folding under stress,Heat shock response
+ClpB,Disaggregase that dissolves protein aggregates formed during desiccation,Heat shock response
+HSP23,Stabilizes proteins in a foldable state,Heat shock response
+GroES,Essential for stress-induced protein folding,Heat shock response
+ectoine synthase,Osmoprotectant production (ectoine),Ectoine biosynthesis
+proA,Proline biosynthesis (γ-glutamyl phosphate reductase),Proline biosynthesis
+proB,Proline biosynthesis (glutamate kinase),Proline biosynthesis
+proC,Proline biosynthesis (P5CR); accumulates protective proline,Proline biosynthesis
+recA,Fixes double-strand breaks from desiccation,DNA repair
+uvrA,DNA damage recognition in NER pathway,Nucleotide excision repair
+uvrB,Verifies and helps remove damaged DNA,Nucleotide excision repair
+uvrC,Nuclease that excises damaged DNA segments in NER,Nucleotide excision repair
+MtlD,Osmoprotectant and ROS scavenger (mannitol),Mannitol biosynthesis
+WHy domain,Replacing water molecules around macromolecules during drying,Stress tolerance
+katE,Removes H₂O₂,Catalase (breaks down H₂O₂)
+katG,Removes peroxides produced during stress,Catalase–peroxidase (breaks down H₂O₂ and peroxides)
+SOD1,Converts superoxide → H₂O₂,Cu–Zn superoxide dismutase (handles superoxide radicals)
+ahpC,Reduces organic hydroperoxides; antioxidant role,Peroxiredoxin (reduces peroxides; antioxidant role)
+LEA,"Stabilizes proteins, membranes, and DNA",Stabilizing proteins and membranes
