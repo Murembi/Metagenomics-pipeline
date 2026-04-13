@@ -36,3 +36,16 @@ print(x.head())
 y = data["label"]
 print(y.head())
 
+print(data["Aridity_class_2000"].unique()) #all the different aridity levels
+print(data["label"].value_counts()) #value counts of each labels
+#imbalance the data more aridity an fewer (Hyper-arid, dry sub humid)
+# solution is the binary approach
+#Arid and hyperarid = 1
+#semi-arid, dry sub humid  and humid = 0
+
+data["binary_label"] = data["Aridity_class_2000"].isin(["Arid", "Hyper_arid"]).astype(int)
+
+print(data["binary_label"].value_counts())
+print(data["binary_label"].value_counts(normalize = True))
+
+#new balance is 59% non-drought ad 41% drought adapted
